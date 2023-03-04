@@ -1,0 +1,83 @@
+---
+import {frameworks, languages} from '../data/skills';
+import resume from '../assets/Resume.pdf';
+---
+
+
+<section class="resume-section" id="about">
+    <div class="resume-section-content d-flex">
+        <div>
+            <h1 class="mb-0">
+                Zeeshan
+                <span class="text-primary">Ahmed</span>
+            </h1>
+            <div class="subheading mb-5">
+                Software Engineer | Web Dev Enthusiast ·
+                <a class="underline" href="mailto:zshanahmed@hotmail.com">zshanahmed@hotmail.com</a>
+            </div>
+            <p class="lead mb-3 about-cap">I am experienced in developing full stack web applications which are responsive and provide seamless user experience. I am always exploring for new state of the art technologies and tools in web development.</p>
+            <div class="d-flex mb-5">
+                <a href={resume} target="_blank" class="btn--primary"><i class="fa-solid fa-file-pdf me-1"></i> Resume</a>
+                <a href="https://www.ndss-symposium.org/ndss-paper/phoenix-device-centric-cellular-network-protocol-monitoring-using-runtime-verification/" target="_blank" class="btn--primary"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Paper</a>
+            </div>
+            <div class="social-icons">
+                <a class="social-icon linkedin" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/zshanahmed"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon github" target="_blank" rel="noreferrer" href="https://www.github.com/zshanahmed"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="skills-container d-flex flex-column gap-5">
+            <div>
+                <h3>Languages</h3>
+                {languages.map(language => (
+                    <div class="skill-text">
+                        <span>{language.name}</span>
+                        <span class="float-end">{language.val}%</span>
+                    </div>
+                    <div class="skills-bar">
+                        <div class="skills-value" style={`width:${language.val}%`}></div>
+                    </div>
+                ))}
+            </div>
+            <div>
+                <h3>Frameworks</h3>
+                {frameworks.map(skill => (
+                    <div class="skill-text">
+                        <span>{skill.name}</span>
+                        <span class="float-end">{skill.val}%</span>
+                    </div>
+                    <div class="skills-bar">
+                        <div class="skills-value" style={`width:${skill.val}%`}></div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </div>
+    <a class="down-arrow" href="#projects">
+        <span class="fa-stack">
+            <i class="fa-solid fa-circle fa-stack-2x"></i>
+            <i class="fa-solid fa-stack-1x fa-arrow-down fa-inverse"></i>
+        </span>
+    </a>
+</section>
+
+<style>
+    #about {
+        padding-top: 1rem;
+    }
+
+    .about-cap {
+        max-width: 65%;
+    }
+
+    .social-icon {
+        transition: background ease-in-out 0.2s;
+    }
+
+    .linkedin:hover {
+        background: #0072b1 !important;
+    }
+
+    .github:hover {
+        background: #171515 !important;
+    }
+</style>

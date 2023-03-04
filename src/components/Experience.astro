@@ -1,0 +1,63 @@
+---
+import vidiumlogo from "../images/vidium_logo.png"
+import iihrlogo from "../images/iihr_logo.png"
+import uiowalogo from "../images/uiowa_logo.png"
+---
+
+<section class="resume-section" id="experience">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Experience</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Software Engineer</h3>
+                <div class="subheading mb-3"><img class="company-logo" src={vidiumlogo} alt="Vidium Animal Health"/> Vidium Animal Health</div>
+                <p>Some of the ongoing work in this role is as follows:</p>
+                <ul>
+                    <li>Developed a relational database that contains critical information regarding genetic variants in patients and all the data resulting from DNA sequencing of samples. Developed a corresponding web application that presents useful insights for the reporting team to look at the sample varaint data and reach a diagnosis for the patient.</li>
+                    <li>Developed a protein alignment web application for the reporting team to view the canine amino-acid sequences side-by-side with human sequences by providing gene name or transcript ids. The tool highlights the corresponding position in amino acid sequence in target specie when user provides a position in query specie.</li>
+                    <li>Working on automation of commercial order workflow in Salesforce and integration with an external LIS. This project involves establishing communication between Salesforce and external LIS from getting an order from customer to providing the report to them in their inbox.</li>
+                </ul>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">January 2022 - Present</span></div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Web Developer</h3>
+                <div class="subheading mb-3"><img src={iihrlogo} alt="IIHR Uiowa" class="company-logo"> IIHR (University of Iowa)</div>
+                <p>Worked on developing a library for <a href="https://ifis.iowafloodcenter.org/ifis/" target="_blank" rel="noopener noreferrer">Iowa Flood Information System (IFIS)</a>. The highlights of this project are as follows:</p>
+                <ul>
+                    <li>Developed a javascript library that contains modules for different components of IFIS. The library can even be customized for information systems by adding/customizing modules.</li>
+                    <li>Added an offline user experience to provide some functionality in the areas with poor or no internet access. The user can customize the offline experience as well.</li>
+                    <li>Added dynamic imports to reduce the javascript consumed on page load. The dynamic load also allows users to use map engines (mapbox, google maps) based on their preference.</li>
+                </ul>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">June 2021 - December 2021</span></div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Graduate Research Assistant</h3>
+                <div class="subheading mb-3"><img src={uiowalogo} alt="UIOWA Logo" class="company-logo"> University of Iowa</div>
+                <p>Worked with Dr. Omar Chowdhury on the <a target="_blank" href="https://www.ndss-symposium.org/ndss-paper/phoenix-device-centric-cellular-network-protocol-monitoring-using-runtime-verification/">Phoenix</a> project which was funded by a DARPA grant. The project included following work:</p>
+                <ul>
+                    <li>Developed and optimized androd app for Phoenix, a system identifying n-day cellular network control-plane vulnerabilities as well as dangerous practices of network operators from the device vantage point.</li>
+                    <li>Analyzed and monitored power consumption of various signature types on the popular wireless careers to find optimized monitors.</li>
+                </ul>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">January 2020 - May 2021</span></div>
+        </div>
+    </div>
+</section>
+<hr class="m-0" />
+
+
+<style>
+    .company-logo {
+        width: 80px;
+        margin-right: 0.3em;
+        padding-bottom: 0.2em;
+    }
+
+    a {
+        text-decoration: none;
+    }
+</style>

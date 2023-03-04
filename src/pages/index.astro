@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Sidebar from '../components/Sidebar.astro';
+import About from '../components/About.astro';
+import Experience from '../components/Experience.astro';
+import Projects from '../components/Projects.svelte';
+---
+
+<Layout title="Zeeshan Ahmed | Software Engineer">
+	<main>
+		<Sidebar/>
+		<div class="container-fluid p-0" id="body-content">
+			<About/>
+			<Projects client:load/>
+			<Experience/>
+		</div>
+	</main>
+</Layout>
