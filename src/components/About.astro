@@ -80,4 +80,53 @@ import resume from '../assets/Resume.pdf';
     .github:hover {
         background: #171515 !important;
     }
+
+    .subheading {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.social-icons .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  text-decoration: none;
+}
+.social-icons .social-icon:last-child {
+  margin-right: 0;
+}
+.social-icons .social-icon:hover {
+  background-color: var(--bs-primary);
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.down-arrow {
+  font-weight: 500;
+  font-size: 1.3em;
+  color: hsl(var(--bs-primary-hsl), 50%);
+  max-width: fit-content;
+  position: absolute;
+  bottom: 1em;
+  right:0;
+  left: 50%;
+  animation: downArrow 3s;
+  transition: color 0.3s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.down-arrow:hover{
+  color: hsl(var(--bs-primary-hsl), 35%);
+}
 </style>
