@@ -53,11 +53,11 @@
         <SwiperSlide>
           <div class="h-100">
             <h3>{project.title}</h3>
-            <div class="row">
-              <div class="col-6 col-sm-6">
+            <div class="row flex-column flex-md-row">
+              <div class="col">
                 <img src={project.img} alt={project.alt} />
               </div>
-              <div class="col-6 p-3 project-content">
+              <div class="col p-3 project-content">
                 {project.description}
                 <div class="mt-3">
                   <h4>Technologies Used</h4>

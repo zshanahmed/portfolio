@@ -18,3 +18,25 @@ import profilepicture from "../images/profile-picture.jpeg"
         </ul>
     </div>
 </nav>
+
+<script>
+   
+    // Collapse responsive navbar when toggler is visible
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    navbarToggler.addEventListener('click', () => {
+        console.log('clicked');
+        const navResponse = $('#navbarResponsive')
+        navResponse.toggle();
+    })
+    // const responsiveNavItems = [].slice.call(
+    //     document.querySelectorAll('#navbarResponsive .nav-link')
+    // );
+    // responsiveNavItems.map(function (responsiveNavItem) {
+    //     responsiveNavItem.addEventListener('click', () => {
+    //         if (window.getComputedStyle(navbarToggler).display !== 'none') {
+    //             navbarToggler.click();
+    //         }
+    //     });
+    // });
+
+</script>
