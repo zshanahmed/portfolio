@@ -1,5 +1,5 @@
 
-const repo = 'zshanahmed.github.io';
+const repo = '/zshanahmed.github.io';
 export const projects = [
     {
         title: "Science Alliance Portal",
