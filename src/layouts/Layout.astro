@@ -6,6 +6,7 @@ export interface Props {
 import favicon from "../images/favicon.png";
 
 const { title } = Astro.props as Props;
+import siteimg from "../images/site-img.jpg"
 ---
 
 <!DOCTYPE html>
@@ -14,12 +15,30 @@ const { title } = Astro.props as Props;
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Primary Meta Tags -->
+    <title>{title}</title>
+	<meta name="title" content="Zeeshan Ahmed - Software Engineer">
+	<meta name="description" content="Software Engineer experienced in developing full stack web applications which are responsive and provide seamless user experience. I am always exploring for new state of the art technologies and tools in web development.">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://zshanahmed.github.io/">
+	<meta property="og:title" content="Zeeshan Ahmed - Software Engineer">
+	<meta property="og:description" content="Software Engineer experienced in developing full stack web applications which are responsive and provide seamless user experience. I am always exploring for new state of the art technologies and tools in web development.">
+	<meta property="og:image" content={siteimg}>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://zshanahmed.github.io/">
+	<meta property="twitter:title" content="Zeeshan Ahmed - Software Engineer">
+	<meta property="twitter:description" content="Software Engineer experienced in developing full stack web applications which are responsive and provide seamless user experience. I am always exploring for new state of the art technologies and tools in web development.">
+	<meta property="twitter:image" content={siteimg}>
+
 	<link rel="shortcut icon" href={favicon} type="image/x-icon">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" crossorigin="anonymous">
 	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <title>{title}</title>
 </head>
 <body data-spy="scroll" data-target="#sideNav" id="page-top">
 	<slot/>
