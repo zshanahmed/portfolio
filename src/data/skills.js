@@ -4,7 +4,7 @@ export const frameworks = [
         'val': 95
     },
     {
-        'name': 'React',
+        'name': 'Nextjs',
         'val': 90
     },
     {
@@ -25,5 +25,9 @@ export const languages = [
     {
         'name': 'Apex',
         'val': 85
+    },
+    {
+        'name': 'SQL',
+        'val': 92
     }
 ]

@@ -13,6 +13,16 @@ export const projects = [
         github: "https://github.com/zshanahmed/next13-carshowcase",
         app: "https://next13-carshowcase-4f7m.vercel.app/"
       },
+      {
+        title: "Chat HQ",
+        description:
+          "Online chat application running on top of chatengine.io API to provide an interactive user experience to users. Users can login to start chatting or signup to create a new account. Users can also send images to other users in the thread and see who's online right now.",
+        skills: ["React", "chatengine.io"],
+        img: chat_hq,
+        alt: "Monitor screen showing mockup of chat hq",
+        github: "https://github.com/zshanahmed/CardsHQ",
+        app: "https://chathq.netlify.app/login"
+      },
     {
       title: "Science Alliance Portal",
       description:
@@ -21,14 +31,5 @@ export const projects = [
       img: sap,
       alt: "Monitor screen showing mockup of science alliance portal",
       github: "https://github.com/zshanahmed/SAP"
-    },
-    {
-      title: "Chat HQ",
-      description:
-        "Online chat application running on top of chatengine.io API to provide an interactive user experience to users. Users can login to start chatting or signup to create a new account. Users can also send images to other users in the thread and see who's online right now.",
-      skills: ["React", "chatengine.io"],
-      img: chat_hq,
-      alt: "Monitor screen showing mockup of chat hq",
-      github: "https://github.com/zshanahmed/CardsHQ"
     }
   ];
