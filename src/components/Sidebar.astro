@@ -17,7 +17,25 @@ import profilepicture from "../images/profile-picture.jpeg"
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
         </ul>
     </div>
+    <div class="d-flex">
+        <p class="footer-text">Built with AstroJS</p>
+    </div>
 </nav>
+
+<style>
+    .footer-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff;
+        opacity: 0.6;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+        float: right;
+    }
+</style>
 
 <script>
    
@@ -28,15 +46,5 @@ import profilepicture from "../images/profile-picture.jpeg"
         const navResponse = $('#navbarResponsive')
         navResponse.toggle();
     })
-    // const responsiveNavItems = [].slice.call(
-    //     document.querySelectorAll('#navbarResponsive .nav-link')
-    // );
-    // responsiveNavItems.map(function (responsiveNavItem) {
-    //     responsiveNavItem.addEventListener('click', () => {
-    //         if (window.getComputedStyle(navbarToggler).display !== 'none') {
-    //             navbarToggler.click();
-    //         }
-    //     });
-    // });
 
 </script>

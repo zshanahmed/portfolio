@@ -10,6 +10,18 @@ export const frameworks = [
     {
         'name': 'Ruby on Rails',
         'val': 85
+    },
+    {
+        'name': 'React',
+        'val': 92
+    },
+    {
+        'name': 'MERN',
+        'val': 90
+    },
+    {
+        'name': 'AstroJS',
+        'val': 95
     }
 ];
 
@@ -30,4 +42,18 @@ export const languages = [
         'name': 'SQL',
         'val': 92
     }
+]
+
+export const skills = [
+    'Python',
+    'Apex (Salesforce)',
+    'JavaScript',
+    'TypeScript',
+    'SQL',
+    'Ruby',
+    'Java',
+    'C++',
+    'R',
+    'PHP'
+
 ]

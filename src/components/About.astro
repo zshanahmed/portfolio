@@ -40,7 +40,7 @@ import resume from '../assets/Zeeshan_Ahmed_Resume.pdf';
             </div>
             <div>
                 <h3>Frameworks</h3>
-                {frameworks.map(skill => (
+                {frameworks.slice(0,3).map(skill => (
                     <div class="skill-text">
                         <span>{skill.name}</span>
                         <span class="float-end">{skill.val}%</span>

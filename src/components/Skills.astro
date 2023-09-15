@@ -1,35 +1,27 @@
+---
+import { skills } from "../data/skills";
+import { frameworks } from "../data/skills";
+---
+
 <section class="resume-section" id="skills">
     <div class="resume-section-content">
         <h2 class="mb-5">Skills</h2>
-        <div class="d-flex flex-column flex-md-row gap-5 justify-content-md-center">
-            <div class="skills-box">
-                <h3 class="skill-heading">Languages</h3>
+            <div>
+                <h3>Languages</h3>
                 <ul>
-                    <li>Python</li>
-                    <li>Apex (Salesforce)</li>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                    <li>SQL</li>
-                    <li>Ruby</li>
-                    <li>Java</li>
-                    <li>C++</li>
-                    <li>R</li>
-                    <li>PHP</li>
+                    {skills.map((skill) => (
+                        <li>{skill}</li>
+                    ))}
                 </ul>
             </div>
-            <div class="skills-box">
-                <h3 class="skill-heading">Web Development</h3>
+            <div class="mt-5">
+                <h3>Web Development</h3>
                 <ul>
-                    <li>Django</li>
-                    <li>NextJS</li>
-                    <li>Svelte</li>
-                    <li>ReactJS</li>
-                    <li>MERN</li>
-                    <li>Ruby on Rails</li>
-                    <li>AstroJS</li>
+                    {frameworks.map((framework) => (
+                        <li>{framework.name}</li>
+                    ))}
                 </ul>
             </div>
-        </div>
     </div>
     <a class="down-arrow" href="#education">
         <span class="fa-stack">
@@ -40,36 +32,30 @@
 </section>
 <hr class="m-0" />
 <style>
-    .skills-box {
-        background: hsl(272, 30%, 44%);
-        color: #fff !important;
-        font-size: 1.2rem;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        border-radius: 10px;
-        line-height: 2rem;
+
+    ul {
+        padding: 0;
+    }
+
+    ul > li {
+        list-style-type: none;
+        display: inline-block;
+        margin-right: 0.5em;
+        color: #fff;
+        padding: 0.3em 0.8em;
+        border-radius: 1em;
         cursor: pointer;
-        transition: all 300ms ease-in-out;
+        background-color: hsl(272, 30%, 40%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    li:hover{
+        background-color: transparent;
+        box-shadow: 0 0 0 2px hsl(272, 30%, 40%);
+        color: hsl(272, 30%, 40%);
     }
 
     @media (min-width: 992px) {
         padding: 4rem;
-    }
-
-    .skills-box:hover {
-        background: hsl(272, 30%, 35%);
-        box-shadow:  0 1px 1px rgba(0,0,0,0.11), 
-              0 2px 2px rgba(0,0,0,0.11), 
-              0 4px 4px rgba(0,0,0,0.11), 
-              0 8px 8px rgba(0,0,0,0.11), 
-              0 16px 16px rgba(0,0,0,0.11), 
-              0 32px 32px rgba(0,0,0,0.11);
-    }
-
-    .skill-heading {
-        color: #fff;
-        padding: 1rem;
-        font-size: 2rem;
-
     }
 </style>
