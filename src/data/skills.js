@@ -16,12 +16,24 @@ export const frameworks = [
         'val': 92
     },
     {
+        'name': 'Flask',
+        'val': 92
+    },
+    {
         'name': 'MERN',
         'val': 90
     },
     {
         'name': 'AstroJS',
         'val': 95
+    },
+    {
+        'name': 'Express',
+        'val': 90
+    },
+    {
+        'name': 'Prisma',
+        'val': 92
     }
 ];
 
@@ -36,7 +48,7 @@ export const languages = [
     },
     {
         'name': 'Apex',
-        'val': 85
+        'val': 90
     },
     {
         'name': 'SQL',
@@ -55,5 +67,4 @@ export const skills = [
     'C++',
     'R',
     'PHP'
-
 ]
