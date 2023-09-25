@@ -15,7 +15,7 @@ import { frameworks } from "../data/skills";
                 </ul>
             </div>
             <div class="mt-5">
-                <h3>Web Development</h3>
+                <h3>Frameworks & Libraries</h3>
                 <ul>
                     {frameworks.map((framework) => (
                         <li>{framework.name}</li>
@@ -42,17 +42,11 @@ import { frameworks } from "../data/skills";
         display: inline-block;
         margin-right: 0.5em;
         color: #fff;
+        font-weight: 600;
         padding: 0.3em 0.8em;
         border-radius: 1em;
-        cursor: pointer;
-        background-color: hsl(272, 30%, 40%);
-        transition: all 0.3s ease-in-out;
-    }
-
-    li:hover{
-        background-color: transparent;
-        box-shadow: 0 0 0 2px hsl(272, 30%, 40%);
-        color: hsl(272, 30%, 40%);
+        box-shadow: 2px 2px 4px hsl(0 0% 0% / 0.4);
+        background-color: hsl(0 0% 0% / 0.7);
     }
 
     @media (min-width: 992px) {

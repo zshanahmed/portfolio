@@ -34,6 +34,10 @@ export const frameworks = [
     {
         'name': 'Prisma',
         'val': 92
+    },
+    {
+        'name': '.NET',
+        'val': 80
     }
 ];
 
@@ -65,6 +69,7 @@ export const skills = [
     'Ruby',
     'Java',
     'C++',
+    'C#',
     'R',
     'PHP'
 ]
