@@ -63,6 +63,11 @@
                     >
                   {/if}
                 </div>
+                {#if project.wait}
+                <div class="text-center mt-2 opacity-75">
+                  <small class="text-muted">The app may take a minute or so to load </small>
+                </div>
+                {/if}
               </div>
             </div>
           </div>
@@ -94,6 +99,7 @@
     list-style-type: none;
     display: inline-block;
     margin-right: 0.2em;
+    margin-bottom: 0.4em;
     color: #fff;
     padding: 0.3em 0.8em;
     border-radius: 1em;
