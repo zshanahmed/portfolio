@@ -27,7 +27,7 @@ export const projects = [
       title: "CardsHQ",
       description:
         "Online card trading game that allows users to draw cards, play cards and trade them. Moreover the users can keep track of their scores using the built-in score card. The users can also create rooms and share the invitation tokens with their friends to play with them.",
-      skills: ["Ruby on Rails", "Bootstrap", "PostgreSQL", "Capybara", "Cucumber", "Render"],
+      skills: ["Ruby on Rails", "Bootstrap", "PostgreSQL", "SendGrid", "Capybara", "Cucumber", "Render"],
       img: cards_hq,
       wait: true,
       alt: "Monitor screen showing mockup of chat hq",
